@@ -2,7 +2,7 @@
 这是一个简单的由java编写的servelet起始小项目，该项目未用到IDEA等IDE，而是在最普通的文本编辑器里编写，以了解servlet的运行机制
 
 
-## 项目结构
+# 项目结构
 ```
 .
 ├── README.md
@@ -24,7 +24,7 @@
                 ├── HelloServlet.java
                 └── StudentServlet.java
 ```
-## 项目包含技术
+# 项目包含技术项
 
 * Tomcat（java运行服务器）
 * Servlet（http请求）
@@ -33,7 +33,7 @@
 * Mysql（在docker中启动）
 
 
-## 运行
+# 运行
 ### 前提准备
 * 安装JDK
 * 安装tomcat
@@ -144,10 +144,10 @@ cd /usr/local/tomcat/bin
 ```
 http://localhost:8080/java-servlet-start/student/list
 ```
-## 什么是servlet
+# 什么是servlet
 Servlet 是 Java 中用于创建动态 Web 应用程序的服务器端组件。它运行在支持 Java 的 Web 服务器（如 Apache Tomcat）上，处理客户端（通常是浏览器）发送的请求并生成响应，通常是 HTML 页面或 JSON 数据。
 
-## 开发servlet的一些规范
+# 开发servlet的一些规范
 * WEB-INF文件夹是必须的，且在根目录下
 * web.xml文件是必须的 在WEB-INF文件夹下
 * classes文件夹是必须的，在WEB-INF文件夹下，该文件夹下是编译后的执行文件
