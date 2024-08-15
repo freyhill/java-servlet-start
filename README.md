@@ -144,6 +144,51 @@ cd /usr/local/tomcat/bin
 ```
 http://localhost:8080/java-servlet-start/student/list
 ```
+得到如下json数据
+```
+[
+    {
+        username: "user1",
+        email: "user1@example.com"
+    },
+    {
+        username: "user2",
+        email: "user2@example.com"
+    },
+    {
+        username: "user3",
+        email: "user3@example.com"
+    },
+    {
+        username: "user4",
+        email: "user4@example.com"
+    },
+    {
+        username: "user5",
+        email: "user5@example.com"
+    },
+    {
+        username: "user6",
+        email: "user6@example.com"
+    },
+    {
+        username: "user7",
+        email: "user7@example.com"
+    },
+    {
+        username: "user8",
+        email: "user8@example.com"
+    },
+    {
+        username: "user9",
+        email: "user9@example.com"
+    },
+    {
+        username: "user10",
+        email: "user10@example.com"
+    }
+]
+```
 # 什么是servlet
 Servlet 是 Java 中用于创建动态 Web 应用程序的服务器端组件。它运行在支持 Java 的 Web 服务器（如 Apache Tomcat）上，处理客户端（通常是浏览器）发送的请求并生成响应，通常是 HTML 页面或 JSON 数据。
 

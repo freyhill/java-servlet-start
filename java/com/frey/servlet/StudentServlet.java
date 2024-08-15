@@ -34,12 +34,12 @@ public class StudentServlet implements Servlet {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3306/subway";
+            String url = "jdbc:mysql://localhost:3306/servletstart";
             String user = "root";
-            String password = "password";
+            String password = "mypassword";
 
             conn = DriverManager.getConnection(url, user, password);
-            String sql = "SELECT username, email FROM users";
+            String sql = "SELECT username, email FROM user";
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
 
