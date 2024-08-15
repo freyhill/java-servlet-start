@@ -34,15 +34,15 @@
 
 
 # 运行
-### 前提准备
+### 1.前提准备
 * 安装JDK
 * 安装tomcat
 * 安装docker及数据库
 * 科隆项目
-* tomcat的webapps文件夹下
+* 将项目放置tomcat的webapps文件夹下
     * tomcat一般目录为```/usr/local/tomcat/```
 
-### 启动mysql的docker容器
+### 2.启动mysql的docker容器
 启动一个mysql容器
 ```
 docker run --name servlet-mysql -e MYSQL_ROOT_PASSWORD=mypasswor
@@ -60,7 +60,7 @@ d -p 3306:3306 -d mysql:8.0
 
 * mysql:8.0: 指定使用的镜像名称和版本，这里是 mysql 镜像的 8.0 版本。
 
-### 进入容器创建数据库及插入数据
+### 3.进入容器创建数据库及插入数据
 1. 进入mysql容器
 ```
 docker exec -it servlet-mysql bash
@@ -106,7 +106,7 @@ SELECT * FROM user;
 
 ```
 
-### 编译
+### 4.编译
 进入tomcat下webapps项目根目录执行编译
 ```
 javac -d ./WEB-INF/classes -classpath ./WEB-INF/lib/servlet-api.jar ./java/com/frey/servlet/StudentServlet.java
@@ -134,13 +134,13 @@ mysql-connector-j-8.0.33.jar 提供了与 MySQL 数据库通信的实现类，�
 但是，运行时仍然需要 mysql-connector-j-8.0.33.jar，因为这是你的代码在运行时与 MySQL 数据库交互所必须的。
 ```
 
-### 启动tomcat
+### 5.启动tomcat
 ```
 cd /usr/local/tomcat/bin
 ./startup.sh
 ```
 
-### 访问项目
+### 6.访问项目
 ```
 http://localhost:8080/java-servlet-start/student/list
 ```
