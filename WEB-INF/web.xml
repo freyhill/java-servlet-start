@@ -1,0 +1,30 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Servlet 配置 -->
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.frey.servlet.HelloServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet 映射 -->
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/a/b/c</url-pattern>
+    </servlet-mapping>
+
+<!-- Servlet 配置 -->
+    <servlet>
+        <servlet-name>StudentServlet</servlet-name>
+        <servlet-class>com.frey.servlet.StudentServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet 映射 -->
+    <servlet-mapping>
+        <servlet-name>StudentServlet</servlet-name>
+        <url-pattern>/student/list</url-pattern>
+    </servlet-mapping>
+</web-app>
